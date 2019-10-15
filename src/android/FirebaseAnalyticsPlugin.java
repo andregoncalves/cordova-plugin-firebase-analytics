@@ -78,12 +78,13 @@ public class FirebaseAnalyticsPlugin extends ReflectiveCordovaPlugin {
         callbackContext.success();
     }
 
-    @CordovaMethod
+    /*@CordovaMethod
     private void setEnabled(boolean enabled, CallbackContext callbackContext) {
         this.firebaseAnalytics.setAnalyticsCollectionEnabled(enabled);
 
         callbackContext.success();
     }
+    */
 
     @CordovaMethod(ExecutionThread.UI)
     private void setCurrentScreen(String screenName, CallbackContext callbackContext) {

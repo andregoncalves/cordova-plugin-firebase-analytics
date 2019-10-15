@@ -42,6 +42,7 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+/*
 - (void)setEnabled:(CDVInvokedUrlCommand *)command {
     bool enabled = [[command.arguments objectAtIndex:0] boolValue];
 
@@ -50,6 +51,7 @@
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
+*/
 
 - (void)setCurrentScreen:(CDVInvokedUrlCommand *)command {
     NSString* name = [command.arguments objectAtIndex:0];
